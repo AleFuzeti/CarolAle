@@ -1,0 +1,22 @@
+[
+    {
+        "nome": "Conjunto de Panelas",
+        "preco": 299.99,
+        "descricao": "Conjunto de panelas de aço inoxidável com 10 peças."
+    },
+    {
+        "nome": "Aparelho de Jantar",
+        "preco": 199.99,
+        "descricao": "Aparelho de jantar de porcelana com 20 peças."
+    },
+    {
+        "nome": "Batedeira",
+        "preco": 149.99,
+        "descricao": "Batedeira planetária com 8 velocidades."
+    },
+    {
+        "nome": "Liquidificador",
+        "preco": 89.99,
+        "descricao": "Liquidificador com jarra de vidro de 1.5L."
+    }
+]
