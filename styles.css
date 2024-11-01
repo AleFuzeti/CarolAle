@@ -1,69 +1,143 @@
-/* styles.css */
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 body {
     font-family: Arial, sans-serif;
+    color: #333;
     background-color: #f4f4f4;
     margin: 0;
     padding: 0;
 }
 
+/* Header */
 header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px 0;
+    background-color: #36381f;
+    color: white;
+    padding: 15px;
     text-align: center;
+}
+
+header h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.1em;
 }
 
 nav {
-    background-color: #444;
-    overflow: hidden;
+        /*space between*/
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
 }
 
 nav a {
-    float: left;
-    display: block;
-    color: #fff;
-    text-align: center;
-    padding: 14px 16px;
+    color: white;
+    margin: 0 15px;
     text-decoration: none;
+    font-weight: bold;
+    font-size: 1em;
 }
 
 nav a:hover {
-    background-color: #555;
+    text-decoration: underline;
 }
 
+/* Seção da foto do casal */
+section#foto-casal {
+    text-align: center;
+    position: relative;
+}
+
+section#foto-casal img {
+    width: 100%;
+}
+
+section#foto-casal .overlay {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    text-align: center;
+    padding-top: 30%;
+    width: 100%;
+}
+
+section#foto-casal .overlay h1 {
+    font-size: 3em;
+    font-weight: bold;
+}
+
+section#foto-casal .overlay p {
+    font-size: 1.5em;
+}
+
+/* Container principal */
 .container {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+/* Estilo para a nova seção com fundo, largura e bordas arredondadas */
+.container-custom {
+    background-color: #36381f;
+    color: white;
+    width: 80%;
+    margin: 20px auto;
     padding: 20px;
-    max-width: 800px;
-    margin: auto;
-    background-color: #fff;
-}
-
-h2 {
-    color: #333;
-}
-
-p {
+    border-radius: 10px;
+    text-align: center;
     line-height: 1.6;
-    color: #666;
 }
 
-.presentes {
-    list-style: none;
-    padding: 0;
+.container-custom p {
+    margin-bottom: 10px;
 }
 
-.presente {
-    background-color: #eaeaea;
-    margin: 10px 0;
-    padding: 15px;
-    border-radius: 5px;
+/* Layout da foto e curiosidades em duas colunas */
+.container-foto {
+    display: flex;
+    max-width: 80%;
+    margin: 20px auto;
+    gap: 20px;
 }
 
+.container-foto img {
+    width: 50%;
+    border-radius: 10px;
+}
+
+/* Estilo para a seção de curiosidades */
+.container-texto {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.container-texto p {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+    color: #36381f;
+    text-align: center;
+}
+
+/* Footer */
 .footer {
-    background-color: #333;
-    color: #fff;
+    background-color: #36381f;
+    color: white;
     text-align: center;
     padding: 10px 0;
-    width: 100%;
+    font-size: 0.9em;
+}
+
+.footer p {
+    margin: 5px;
 }

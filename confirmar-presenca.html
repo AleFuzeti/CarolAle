@@ -3,25 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Confirmar Presença</title>
+    <title>Casamento de Carol e Ale</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Confirmar Presença</h1>
-        <p>Por favor, confirme sua presença até o dia 10 de agosto.</p>
+        <h1>Casamento de Carol e Ale</h1>
+        <p>Bem-vindos ao nosso site de casamento!</p>
+        <nav>
+            <a href="#ocasal">O Casal</a>
+            <a href="#acerimonia">A Cerimônia</a>
+            <a href="confirmar-presenca.html">Confirmação de Presença</a>
+            <a href="lista-de-presentes.html">Lista de Presentes</a>
+        </nav>
     </header>
+
+    <section id="foto-casal">
+        <img src="foto-casal.jpg" alt="Foto de Carolina e Alexandre">
+        <div class="overlay">
+            <h1>Carolina e Alexandre</h1>
+            <p>06.06.2026</p>
+        </div>
+    </section>
+
     <div class="container">
-        <form action="https://www.example.com/confirmar-presenca" method="post">
-            <label for="nome">Nome:</label><br>
-            <input type="text" id="nome" name="nome" required><br><br>
-            <label for="email">Email:</label><br>
-            <input type="email" id="email" name="email" required><br><br>
-            <label for="numero-pessoas">Número de Pessoas:</label><br>
-            <input type="number" id="numero-pessoas" name="numero-pessoas" min="1" required><br><br>
-            <input type="submit" value="Confirmar Presença">
-        </form>
+        <section id="local">
+            <h2>Local do Casamento</h2>
+            <p>Nosso casamento será realizado no <strong>Espaço Verde</strong> em São Paulo. O endereço é Rua das Flores, 123, Bairro Jardim.</p>
+            <p>Veja o mapa abaixo para mais detalhes:</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.2138162584635!2d-46.65345868499118!3d-23.588334484673468!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c43c6c8b67%3A0x12b9e32c8c8c9d5f!2sAv.%20Paulista%2C%201000%20-%20Bela%20Vista%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001310-100!5e0!3m2!1spt-BR!2sbr!4v1622713200754!5m2!1spt-BR!2sbr" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </section>
     </div>
+    
     <div class="footer">
         <p>&copy; 2024 Carol e Ale. Todos os direitos reservados.</p>
     </div>
