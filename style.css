@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background-color: #36381f;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+/* Seção da foto do casal */
+section#foto-casal {
+    text-align: center;
+    position: relative;
+}
+
+section#foto-casal img {
+    width: 100%;
+}
+
+section#foto-casal .overlay {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    text-align: center;
+    padding-top: 30%;
+    width: 100%;
+}
+
+section#foto-casal .overlay h1 {
+    font-size: 3em;
+    font-weight: bold;
+}
+
+section#foto-casal .overlay p {
+    font-size: 1.5em;
+}
+
+/* Container principal */
+.container-custom {
+    background-color: #36381f;
+    color: white;
+    max-width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.container-custom p {
+    margin-bottom: 10px;
+}
+
+/* Layout da foto e curiosidades em duas colunas */
+.container-foto {
+    display: flex;
+    max-width: 80%;
+    margin: 20px auto;
+    gap: 20px;
+}
+
+.container-foto img {
+    width: 50%;
+    border-radius: 10px;
+}
+
+/* Estilo para a seção de curiosidades */
+.container-texto {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+}
+
+.container-texto h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #e7e26b;
+}
+
+.container-texto ul {
+    list-style: none;
+    padding: 0;
+}
+
+.container-texto li {
+    font-size: 1.1em;
+    color: #36381f;
+    background-color: #faf2e9;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    text-align: left;
+}
+
+/* Footer */
+.footer {
+    background-color: #36381f;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 0.9em;
+}

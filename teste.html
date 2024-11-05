@@ -4,129 +4,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Casamento de Carol e Ale</title>
-    <style>
-        /* Estilo do cabeçalho */
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #faf2e9;
-        }
-        header {
-            background-color: #36381f;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-        nav {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            font-size: 1.2rem;
-            margin-top: 10px;
-        }
-        nav a {
-            color: #e7e26b;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        nav a:hover {
-            text-decoration: underline;
-        }
-        .main-content {
-            text-align: center;
-            color: #faf2e9;
-        }
-        .main-content img {
-            max-width: 100%;
-            height: auto;
-        }
-        .text-large {
-            font-size: 2.5rem;
-            font-weight: bold;
-            line-height: 1.2;
-        }
-        .text-date {
-            font-size: 1.5rem;
-            margin-top: 10px;
-            text-transform: uppercase;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header>
+        <nav>
+            <a href="#casal">O Casal</a>
+            <a href="#cerimonia">A Cerimônia</a>
+            <a href="#presenca">Confirmação de Presença</a>
+            <a href="#presentes">Lista de Presentes</a>
+        </nav>
+    </header>
 
-<header>
-    <h1>Casamento de Carol e Ale</h1>
-    <nav>
-        <a href="#o-casal">O Casal</a>
-        <a href="#a-cerimonia">A Cerimônia</a>
-        <a href="#confirmacao">Confirmação de Presença</a>
-        <a href="#lista-presentes">Lista de Presentes</a>
-    </nav>
-</header>
-
-<section id="PB5gJRJww5vlTBrF" class="main-content">
-    <img src="https://carolale.my.canva.site/media/9c5e7ffb3daee3b641fd4d4e637edcf0.png" alt="Imagem do Casal">
-    <div class="text-large">Carolina e<br>Alexandre</div>
-    <div class="text-date">06.06.2026</div>
-</section>
-
-<section id="PBvS38XQVWwHhYtZ" class="main-content" style="background-color: #faf2e9; padding: 2rem;">
-    <div style="max-width: 508px; margin: 0 auto; text-align: center;">
-        <div style="background-color: #36381f; padding: 1rem; color: #e7e26b;">
-            <h2 style="font-size: 2rem;">Nossa História</h2>
+    <!-- Seção com a foto e detalhes dos noivos -->
+    <section id="foto-casal">
+        <img src="foto-casal.jpg" alt="Foto de Carolina e Alexandre">
+        <div class="overlay">
+            <h1>Carolina e Alexandre</h1>
+            <p>06.06.2026</p>
         </div>
-        <p style="color: #e7e26b; font-size: 1rem; line-height: 1.5; margin-top: 1.5rem;">
-            <!-- Aqui você pode inserir o conteúdo sobre a história do casal -->
-            aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa<br>
-            aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa<br>
-            aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa<br>
-            aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa<br>
-            aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa<br>
-            aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa<br>
-            aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa<br>
-            aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa<br>
-            aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa<br>
-            aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa<br>
-            aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa<br>
-            aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa<br>
-            aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa<br>
-            aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-        </p>
+    </section>
+
+    <section id="casal" class="container-custom">
+        <h2>O Casal</h2>
+        <p>Carolina e Alexandre se conheceram em 2019, durante um curso de programação. Desde então, compartilham a paixão por tecnologia e inovação. Em 2021, decidiram se casar e compartilhar o resto de suas vidas juntos.</p>
+        <p>Estamos muito felizes em compartilhar esse momento com vocês e contamos com sua presença para celebrar conosco!</p>
+        <p>Com carinho, Carolina e Alexandre.</p>
+    </section>
+
+    <!-- Seção com curiosidades e foto ao lado -->
+    <div class="container-foto">
+        <img src="curiosidades.png" alt="Foto de Carolina e Alexandre">
+        <div class="container-texto">
+            <h3>Curiosidades sobre o casal:</h3>
+            <ul>
+                <li>Carolina e Alexandre adoram viajar e conhecer novos lugares.</li>
+                <li>Carolina é apaixonada por gatos e tem 3 gatinhos em casa.</li>
+                <li>Alexandre é um entusiasta de tecnologia e adora gadgets.</li>
+                <li>Carolina e Alexandre adoram cozinhar juntos e experimentar novas receitas.</li>
+            </ul>
+        </div>
     </div>
-</section>
 
-<!-- Terceira parte: Curiosidades sobre o casal -->
-<section id="PBcZ0F5WRJ7bBXh5" class="main-content" style="background-color: #faf2e9; padding: 2rem;">
-    <div style="max-width: 508px; margin: 0 auto; text-align: center;">
-        <img src="https://carolale.my.canva.site/media/0eea944c6858769f48ecaf61bfe4b3f7.jpg" alt="Imagem curiosidades" style="width: 100%; height: auto;">
-        <h2 style="font-size: 2rem; color: #36381f; margin-top: 1.5rem;">Curiosidades sobre o casal</h2>
-        <p style="color: #e7e26b; font-size: 1rem; line-height: 1.5; margin-top: 1.5rem;">
-            aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa<br>
-            aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa<br>
-            aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa<br>
-            aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa<br>
-            aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa<br>
-            aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa<br>
-            aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa<br>
-            aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa<br>
-            aaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-        </p>
-    </div>
-</section>
+    <!-- Seção da cerimônia com detalhes e cronograma -->
+    <section id="cerimonia" class="container-custom">
+        <h2>A Cerimônia</h2>
+        <p>Estamos animados para compartilhar esse momento especial com vocês! Aqui estão alguns detalhes:</p>
+        <ul>
+            <li><strong>Data:</strong> 06 de junho de 2026</li>
+            <li><strong>Local:</strong> Chácara da Família, Londrina, PR</li>
+            <li><strong>Dresscode:</strong> Traje Esporte Fino</li>
+            <li><strong>Cardápio:</strong> Jantar com opções vegetarianas e tradicionais</li>
+        </ul>
+        <h3>Cronograma</h3>
+        <ul>
+            <li>16:00 - Recepção dos convidados</li>
+            <li>16:30 - Início da cerimônia</li>
+            <li>18:00 - Fotos com os noivos</li>
+            <li>18:30 - Jantar</li>
+            <li>21:00 - Corte do Bolo</li>
+            <li>22:00 - Encerramento</li>
+        </ul>
+    </section>
 
-<!-- Quarta parte: Sobre a noiva -->
-<section id="PBbTC8Jz5NkPtYVY" class="main-content" style="background-color: #faf2e9; padding: 2rem;">
-    <div style="max-width: 508px; margin: 0 auto; text-align: center;">
-        <h2 style="font-size: 2rem; color: #36381f;">Sobre a Noiva</h2>
-        <p style="color: #e7e26b; font-size: 1rem; line-height: 1.5; margin-top: 1.5rem;">
-            Nascida em 06 de março de 2001, a noiva pisciana é formada em Psicologia pela Universidade Estadual de Londrina, 
-            atuando em Clínica particular, Avaliação Psicológica e Orientação Profissional. Extremamente planejada e animada, 
-            a noiva adora cozinhar, cultivar plantas, pintar aquarelas e cantar. O que Alexandre mais admira na Carol é...
-        </p>
-        <img src="https://carolale.my.canva.site/media/0b5307ca0482f6f04be8962524d00244.jpg" alt="Imagem da noiva" style="width: 100%; height: auto; margin-top: 1rem;">
-    </div>
-</section>
+    <section id="presenca" class="container-custom">
+        <h2>Confirmação de Presença</h2>
+        <p>Por favor, confirme sua presença até o dia 20 de maio de 2026. Contamos com sua presença para celebrar esse dia especial conosco!</p>
+    </section>
 
+    <section id="presentes" class="container-custom">
+        <h2>Lista de Presentes</h2>
+        <p>Para quem quiser nos presentear, aqui está nossa lista de presentes. Agradecemos muito pelo carinho e pela ajuda para iniciar nossa nova vida juntos.</p>
+        <p><a href="https://www.nossalistadepresentes.com" target="_blank">Acessar a Lista de Presentes</a></p>
+    </section>
 
+    <footer class="footer">
+        <p>&copy; 2024 Carol e Ale. Todos os direitos reservados.</p>
+    </footer>
 </body>
 </html>
