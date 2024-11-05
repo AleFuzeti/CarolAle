@@ -6,12 +6,20 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-    color: #333;
-    background-color: #f4f4f4;
+    font-family: 'Calistoga', sans-serif;
+    color: #e7e26b;
     margin: 0;
     padding: 0;
 }
+
+h2 {
+    color: #36381f;
+    text-transform: uppercase;    
+    font-family: 'Playfair Display', serif;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
 
 /* Header */
 header {
@@ -24,6 +32,8 @@ header {
 header h1 {
     font-size: 2em;
     margin-bottom: 10px;
+    font-family: 'Playfair Display', serif;
+    text-transform: uppercase;
 }
 
 header p {
@@ -31,10 +41,10 @@ header p {
 }
 
 nav {
-        /*space between*/
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-transform: uppercase;
 }
 
 nav a {
@@ -47,12 +57,14 @@ nav a {
 
 nav a:hover {
     text-decoration: underline;
+    color:#e7e26b;
 }
 
 /* Seção da foto do casal */
 section#foto-casal {
     text-align: center;
     position: relative;
+    margin-bottom: -5px;
 }
 
 section#foto-casal img {
@@ -73,10 +85,26 @@ section#foto-casal .overlay {
 section#foto-casal .overlay h1 {
     font-size: 3em;
     font-weight: bold;
+    font-family: 'Playfair Display', serif;
+    text-transform: uppercase;
 }
 
 section#foto-casal .overlay p {
     font-size: 1.5em;
+}
+
+section#história, section#noiva  {
+    background-color: #faf2e9;
+    padding: 20px;
+    text-align: center;
+}
+
+div#curiosidades {
+margin: 0 25px;
+}
+
+section#noiva > div.container-foto {
+    flex-direction: row-reverse;
 }
 
 /* Container principal */
@@ -89,13 +117,20 @@ section#foto-casal .overlay p {
 /* Estilo para a nova seção com fundo, largura e bordas arredondadas */
 .container-custom {
     background-color: #36381f;
-    color: white;
     width: 80%;
     margin: 20px auto;
-    padding: 20px;
-    border-radius: 10px;
+    padding: 50px 30px;
+    border-radius: 20px;
     text-align: center;
     line-height: 1.6;
+    color: #e7e26b;
+}
+.container-custom h2 {
+    color: #e7e26b;
+    text-transform: uppercase;    
+    font-family: 'Playfair Display', serif;
+    font-size: 2em;
+    margin-bottom: 10px;
 }
 
 .container-custom p {
@@ -105,28 +140,46 @@ section#foto-casal .overlay p {
 /* Layout da foto e curiosidades em duas colunas */
 .container-foto {
     display: flex;
+    flex-wrap: wrap;
     max-width: 80%;
     margin: 20px auto;
     gap: 20px;
+    text-align: center; /* Centraliza o texto */
 }
 
 .container-foto img {
-    width: 50%;
+    width: 100%;
+    max-width: 500px;
     border-radius: 10px;
+    flex: 1 1 100%;
+    padding: 10px; /* Adiciona padding */
+    margin: 0 auto; /* Centraliza a imagem */
 }
 
-/* Estilo para a seção de curiosidades */
 .container-texto {
     display: flex;
     flex-direction: column;
-    width: 50%;
+    flex: 1 1 100%;
+    text-align: center; /* Centraliza o texto */
+    justify-content: center;
 }
 
 .container-texto p {
     font-size: 1.2em;
     margin-bottom: 15px;
-    color: #36381f;
-    text-align: center;
+    text-align: center; /* Centraliza o texto */
+}
+
+/* Media queries para responsividade */
+@media (min-width: 768px) {
+    .container-foto {
+        flex-wrap: nowrap;
+    }
+
+    .container-foto img,
+    .container-texto {
+        flex: 1 1 50%;
+    }
 }
 
 /* Footer */
